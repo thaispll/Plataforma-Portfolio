@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólios de Estudos - Senai</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/instituto.png" alt="Logo" id="logo-placeholder">
+                <h1> Meu Portfolio</h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Cadastro</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-conteudo">
+                <h2>Plataforma de Portfólios</h2>
+                <p>Compartilhe seus projetos e conquistas acadêmicas no SENAI</p>
+                <a href="#cadastro" class="botao"> Cadastre seu Portfólio</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolios" class="portfolios">
+        <div class="container">
+            <h2 class="titulo-secao">Portfólios em Destaque</h2>
+            <div class="portfolio-grid">
+                    <!-- Portfólios serão carregados via Javascript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="cadastro" class="cadastro">
+        <div class="container">
+            <h2 class="titulo-secao">Cadastre seu Portfólio</h2>
+            <form id="formulario-portfolio">
+                <div class="formulario-grupo">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <span class="erro-mensagem" id="nome-erro"></span>
+                </div>
+                <div class="formulario-grupo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="erro-mensagem" id="email-erro"></span>
+                </div>
+                <div class="formulario-grupo">
+                    <label for="curso">Curso</label>
+                    <select id="curso" name="curso" required>
+                        <option value="">Selecione um curso</option>
+                        <option value="Técnico em Desenvolvimento de Sistemas">Técnico em Desenvolvimento de Sistemas</option>
+
+                    </select>
+                </div>
+            </form>
+        </div>
+
+    </section>
+</body>
+</html>
