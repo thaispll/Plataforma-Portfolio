@@ -51,8 +51,8 @@
 
     <section id="cadastro" class="cadastro">
         <div class="container">
-            <h2 class="titulo-secao">Cadastre seu Portfólio</h2>
-            <form id="formulario-portfolio">
+            <h2 class="titulo-secao">Cadastre seu portifólios</h2>
+            <form id="formulario-portfolio" action="">
                 <div class="formulario-grupo">
                     <label for="nome">Nome Completo</label>
                     <input type="text" id="nome" name="nome" required>
@@ -65,15 +65,24 @@
                 </div>
                 <div class="formulario-grupo">
                     <label for="curso">Curso</label>
-                    <select id="curso" name="curso" required>
+                    <select name="curso" id="curso" required>
                         <option value="">Selecione um curso</option>
-                        <option value="Técnico em Desenvolvimento de Sistemas">Técnico em Desenvolvimento de Sistemas</option>
-
+                        <option value="Técnico de Desenvolvimento de Sistemas">Técnico de Desenvolvimento de Sistemas</option>
+                        <option value="Técnico de Mecatrônica">Técnico de Mecatrônica</option>
+                        <option value="Técnico de Automação Industrial">Técnico de Automação Industrial</option>
+                        <option value="Técnico de Manutenção Automotiva">Técnico de Manutenção Automotiva</option>
+                        <option value="Desenvolvedor de Projetos MAKER no FabLab">Desenvolvedor de Projetos MAKER no FabLab</option>
+                        <option value="Outros">Outros</option>
+                        <span class="erro-mensagem" id="curso-erro">
+                        </span>
+                        
                     </select>
+                </div>
+                <div class="formulario-grupo" id="outro-curso-container" style="display: none;">
+                    <label for="Outro-curso">Especifique</label>
                 </div>
             </form>
         </div>
-
     </section>
 </body>
 </html>
