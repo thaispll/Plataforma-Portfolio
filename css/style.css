@@ -1,0 +1,60 @@
+/*Estilos Gerais */
+
+:root {
+/* seleciona o elemento raiz do documento (HTML)
+Usado para definir variáveis CSS globais para uso 
+em todo o site*/
+    --primary-color: #ff5722;
+    --secondary-color: #2c3e50;
+    --accent-color: #3498db;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+    --gray-color: #95a5a6;
+    --transition: all 0.3s ease;
+}
+
+* {
+    /*Seletor universal: seleciona todos os elementos
+    da página*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body { /*Seleciona apenas o elemento body*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.titulo-secao{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+    position: relative;
+    padding-bottom: 15px;
+
+}
